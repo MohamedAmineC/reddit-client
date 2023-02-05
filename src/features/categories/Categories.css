@@ -1,0 +1,38 @@
+.categories-bar{
+    width: 20%;
+    background-color: #FFF;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding-block: 7rem;
+}
+ul > a,li{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #929292;
+    padding:0 2rem;
+}
+ul a img{
+    width:20px;
+    height: 20px;
+    object-fit: cover;
+}
+ul a.category{
+    padding-block: 0.5rem;
+    color: #000;
+}
+ul a.category:hover{
+    background-color: #b9b9b9;
+}
+ul a.category-active{
+    background-color: black;
+    color: #FFF;
+}
