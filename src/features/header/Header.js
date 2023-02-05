@@ -1,27 +1,18 @@
 import logo from './logo.png';
 import './Header.css'
+import SearchBar from '../searchBar/SearchBar';
 
 export const Header = () => {
     const toggle = () => {
         const menu = document.getElementById("profile-settings");
-        if (menu.style.display === "none") {
-            menu.style.display = "grid";
-        }
-        else {
-            menu.style.display = "none";
-        }
+        menu.style.display = menu.style.display === "grid"? "none" : "grid";
     }
     return (
         <header>
             <div className="logo">
                 <img src={logo} alt="logo" />
             </div>
-            <div className="searchBar">
-                <button type="submit">
-                    <i class="bi bi-search"></i>
-                </button>
-                <input type="search" placeholder="Search Reddit" />
-            </div>
+            <SearchBar/>
             <div className="functionnalities">
                 <a href="https://play.google.com/store/apps/details?id=com.reddit.frontpage&hl=en_US&gl=US">
                     <div className="download">

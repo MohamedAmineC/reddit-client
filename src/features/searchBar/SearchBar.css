@@ -1,0 +1,26 @@
+header .searchBar{
+    width: 40%;
+    padding: 0.75rem 1rem;
+    border-radius: 2rem;
+    background-color:#f0f0f0;
+    display: flex;
+}
+header .searchBar:hover, .searchBar:focus-within{
+    border: 1px solid rgb(4, 88, 199);
+    background-color: #FFF;
+}
+header .searchBar button,input{
+    background-color: transparent;
+    border: 0;
+    color: #b9b9b9;
+}
+header .searchBar input{
+    width: -webkit-fill-available;
+    color: #000;
+}
+header .searchBar input:focus{
+    outline: none;
+}
+header .searchBar input::-webkit-search-cancel-button{
+    cursor: pointer;
+}
