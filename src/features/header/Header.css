@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    font-size: 1rem;
+    font-family: 'Roboto', 'sans-serif';
+    background-color: white;
+    position: fixed;
+    top: 0;
+    box-shadow: 10px 5px 5px rgba(75, 75, 75, 0.295);
+}
+header .logo{
+    width: 6%;
+}
+header .logo img{
+    object-fit: cover;
+}
+header .searchBar{
+    width: 40%;
+    padding: 0.75rem 1rem;
+    border-radius: 2rem;
+    background-color:#f0f0f0;
+    display: flex;
+}
+header .searchBar:hover, .searchBar:focus-within{
+    border: 1px solid rgb(4, 88, 199);
+    background-color: #FFF;
+}
+header .searchBar button,input{
+    background-color: transparent;
+    border: 0;
+    color: #b9b9b9;
+}
+header .searchBar input{
+    width: -webkit-fill-available;
+    color: #000;
+}
+header .searchBar input:focus{
+    outline: none;
+}
+header .searchBar input::-webkit-search-cancel-button{
+    cursor: pointer;
+}
+header .functionnalities{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2rem;
+    font-weight: bold;
+}
+header .functionnalities>div, .functionnalities>a>div{
+    display: flex;
+    gap: 0.25rem;
+    padding: 0.75rem;
+    border-radius: 2rem;
+}
+header .functionnalities>a>div.download{
+    color: rgb(4, 88, 199);
+    border: 1px solid rgb(4, 88, 199);
+} 
+header .functionnalities>a>div.login{
+    color: #FFF;
+    background-color: rgb(4, 88, 199);
+}
+header .functionnalities>div.parameters{
+    cursor: pointer;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    color: #b9b9b9;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    position: relative;
+}
+header .functionnalities>div.parameters:hover{
+    border: 1px solid #b9b9b9;
+}
+
+header .functionnalities>div.parameters ul{
+    background-color: #FFF;
+    width: 200%;
+    display: grid;
+    padding: 1rem;
+    grid-template-columns: 1fr 5fr;
+    font-size: 1.25rem;
+    color: #000;
+    gap: 1rem;
+    position: absolute;
+    right: 0;
+    top: 3rem;
+}
