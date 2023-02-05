@@ -48,7 +48,7 @@ const dataSlice = createSlice({
         .addCase(fetchPostsBySearchTerm.fulfilled, (state,action) => {
             state.loading = false;
             state.error = false;
-            state.posts = action.payload;
+            state.posts = action.payload.data.children;
         })
         .addCase(fetchPostsBySearchTerm.rejected, (state,action) => {
             state.loading = false;

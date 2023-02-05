@@ -11,6 +11,7 @@ const CategoryPage = () => {
     const isLoading = useSelector(selectPostsLoading);
     const error = useSelector(selectPostsError);
     const dispatch = useDispatch();
+    console.log(postsData);
 
     useEffect(() => {
         console.log(category);
