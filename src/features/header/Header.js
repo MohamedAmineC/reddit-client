@@ -1,6 +1,7 @@
 import logo from './logo.png';
 import './Header.css'
 import SearchBar from '../searchBar/SearchBar';
+import { Link } from 'react-router-dom';
 
 export const Header = () => {
     const toggle = () => {
@@ -10,7 +11,9 @@ export const Header = () => {
     return (
         <header>
             <div className="logo">
-                <img src={logo} alt="logo" />
+                <Link to="/">
+                    <img src={logo} alt="logo" />
+                </Link>
             </div>
             <SearchBar/>
             <div className="functionnalities">
