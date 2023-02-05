@@ -35,7 +35,7 @@ const dataSlice = createSlice({
         .addCase(fetchPostsByCategory.fulfilled, (state,action) => {
             state.loading = false;
             state.error = false;
-            state.posts = action.payload;
+            state.posts = action.payload.data.children;
         })
         .addCase(fetchPostsByCategory.rejected, (state,action) => {
             state.loading = false;

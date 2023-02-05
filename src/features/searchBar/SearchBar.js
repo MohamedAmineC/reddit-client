@@ -2,12 +2,10 @@ import { useRef } from 'react';
 import { useDispatch } from 'react-redux';
 import './SearchBar.css';
 import { setSearchTerm } from './searchBarSlice';
-import { useHistory } from 'react-router-dom';
 
 const SearchBar = () => {
     const searchTerm = useRef('');
     const dispatch = useDispatch();
-    const history = useHistory();
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -15,7 +13,7 @@ const SearchBar = () => {
     const searchQuery = new URLSearchParams({
         q: searchTerm.current.value
       }).toString();
-      history.push(`/search?${searchQuery}`);
+      //history.push(`/search?${searchQuery}`);
     searchTerm.current.value = '';
     }
     return (

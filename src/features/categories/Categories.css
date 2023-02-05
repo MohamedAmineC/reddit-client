@@ -10,7 +10,6 @@ ul{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 1rem;
     padding-block: 7rem;
 }
 ul > a,li{
@@ -18,7 +17,7 @@ ul > a,li{
     align-items: center;
     gap: 1rem;
     color: #929292;
-    padding:0 2rem;
+    padding:0.5rem 2rem;
 }
 ul a img{
     width:20px;
@@ -32,7 +31,7 @@ ul a.category{
 ul a.category:hover{
     background-color: #b9b9b9;
 }
-ul a.category-active{
-    background-color: black;
+ul a.active{
+    background-color: rgb(4, 88, 199);
     color: #FFF;
 }

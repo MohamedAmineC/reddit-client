@@ -19,7 +19,7 @@ const CategoryPage = () => {
     },[dispatch,category])
     return (
         <div>
-            <h1>Category Page</h1>
+            <h1>{category} Category Page</h1>
         </div>
     )
 }
