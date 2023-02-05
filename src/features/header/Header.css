@@ -57,7 +57,6 @@ header .functionnalities>div.parameters:hover{
 
 header .functionnalities>div.parameters ul{
     background-color: #FFF;
-    width: 200%;
     display: none;
     padding: 1rem;
     grid-template-columns: 1fr 5fr;
@@ -66,5 +65,5 @@ header .functionnalities>div.parameters ul{
     gap: 1rem;
     position: absolute;
     right: 0;
-    top: 3rem;
+    margin-top: 0.5rem;
 }

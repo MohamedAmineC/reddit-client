@@ -3,6 +3,8 @@ import { Header } from '../features/header/Header';
 import './App.css';
 import { BrowserRouter as Router, Route, Switch} from'react-router-dom';
 import Categories from '../features/categories/Categories';
+import SearchPage from '../pages/searchPage';
+import CategoryPage from '../pages/categoryPage';
 
 
 function App() {
@@ -11,8 +13,17 @@ function App() {
       <Header />
       <main>
           <Categories />
-            <div>search Page</div>
-            <div>Home feed</div>  
+          <Switch>
+            <Route path="/category/:category">
+              <CategoryPage />
+            </Route>
+            <Route path="/search">
+              <SearchPage />
+            </Route>
+            <Route exact path="/">
+            <h2>Home feed</h2>  
+            </Route>
+          </Switch>
       </main>
     </Router>
   );
