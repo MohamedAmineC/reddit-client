@@ -1,15 +1,18 @@
-import { useEffect, useMemo } from "react";
 import { useSelector } from "react-redux";
-import { useLocation } from "react-router-dom";
+import PostLists from "../../features/posts/PostsList";
 import { selectSearchTerm } from "../../features/searchBar/searchBarSlice";
+import { selectPosts, selectPostsError, selectPostsLoading } from "../../features/posts/postsSlice";
 
 const SearchPage = () => {
-    const search = useSelector(selectSearchTerm)
-    
+    const search = useSelector(selectSearchTerm);
+    const posts = useSelector(selectPosts);
+    const isLoading = useSelector(selectPostsLoading);
+    const error = useSelector(selectPostsError);
 
     return(
         <div>
             your  Results for {search}
+            <PostLists posts={posts} isLoading={isLoading} error={error} />
         </div>
     )
 }

@@ -9,7 +9,7 @@ import celebrity from './icons/celebrity.png';
 const initialState  =[
     {name: 'Gaming', icon: gaming},
     {name: 'Sports', icon: sports},
-    {name: 'Bussines, Economics', icon: business },
+    {name: 'business economics and finance', icon: business },
     {name: 'Crypto', icon: crypto},
     {name: 'Television', icon: tv },
     {name: 'Celebrity', icon: celebrity},

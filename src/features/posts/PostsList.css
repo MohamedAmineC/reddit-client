@@ -1,0 +1,7 @@
+.posts-list{
+    width: 600px;
+    margin-inline:auto ;
+    display: grid;
+    grid-auto-rows: minmax(500px,40%);
+    gap: 2rem;
+}
