@@ -2,6 +2,6 @@
     width: 600px;
     margin-inline:auto ;
     display: grid;
-    grid-auto-rows: minmax(500px,40%);
+    grid-auto-rows: minmax(auto,500px);
     gap: 2rem;
 }

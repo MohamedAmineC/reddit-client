@@ -11,14 +11,15 @@ const Post = (props) => {
             </div>
             <div className="post-content">
                 <div className="post-author">
-                    <p>{post.data.author}</p>
+                    <p>{post.data.subreddit_name_prefixed} publiée par {post.data.author}</p>
                 </div>
                 <div className="post-info">
                     <h2>{post.data.title}</h2>
+                    <p>{post.data.selftext}</p>
                 </div>
                 <div className="post-stats">
                     <ul>
-                        <li><i class="bi bi-chat-left-text"></i>{post.data.num_comments}Commentaires</li>
+                        <li><i class="bi bi-chat-left-text"></i> {post.data.num_comments} Commentaires</li>
                         <li><i class="bi bi-share"></i>Partage</li>
                         <li><i class="bi bi-save"></i>Sauvergarder</li>
                     </ul>

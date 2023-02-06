@@ -17,14 +17,26 @@
 .post .stats button{
     background-color: transparent;
     border: none;
-    border-radius: 0;
-    padding: 0;
+    border-radius: 2rem;
+    padding: 0.5rem;
     font-size: 1.5rem;
 }
+.post .stats button:hover,.post .post-content .post-stats li:hover{
+    background-color:#d4d4d4c0;
+    cursor: pointer;
+}
+.post .stats button:first-of-type:hover{
+    color: rgb(0, 68, 255);
+}
+.post .stats button:last-of-type:hover{
+    color: rgba(228, 59, 59, 0.74)
+}
+
 .post .post-content{
     display:grid;
-    grid-template-rows: 10% 80% 10%;
+    grid-template-rows: 10% auto 10%;
     height: -webkit-fill-available;
+    padding: 1rem ;
 }
 .post .post-content .post-stats{
     display: flex;
@@ -33,4 +45,7 @@
     display: flex;
     flex-direction: row;
     padding: 0;
+}
+.post .post-content .post-info{
+    overflow: hidden;
 }
